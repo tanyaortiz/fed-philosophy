@@ -33,6 +33,27 @@ List out the utilities / frameworks you're going to be using for the project. If
 
 If there is something that doesn't fall under an assumption, list it here
 
+### Environment Setup
+
+#### Development Dependencies
+
+If you find yourself using a specific toolset for your development environment, make sure to list it here. If you're using a package.json file and/or bower.json, run ```npm shrinkwrap``` to lock in the version of whatever project you're using.
+
+List your dev dependecies that you've got inside your package.json / bower.json. Run ```npm shrinkwrap``` before you're done to lock in the correct version. There will be times where a project will break if dependencies do not have a correct version number. Bower does not currently have this implemented but will soon [Bower Issue #1362](https://github.com/bower/bower/issues/1362)
+
+A list of common development dependencies: 
+- Node
+- Grunt (task runner)
+- Gulp ( new task runner)
+- SCSS ( css pre-compiler)
+- Bower (package dependency manager)
+- Jasmin
+- Karma
+
+#### Getting Up and Running
+
+Any commands that require execution, ie. ```npm install```.
+
 
 - Everything that needs to happen to set up a working development environment
 - If there’s a build step, the command needed to build out the project
