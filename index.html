@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>ONE NORTH by ppiekarczyk</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>ONE NORTH</h1>
+        <h2>Front End Developer Guide</h2>
+        <a href="https://github.com/ppiekarczyk/onenorth-fed-philosophy" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="one-north-fed-philosophy" class="anchor" href="#one-north-fed-philosophy"><span class="octicon octicon-link"></span></a>One North FED Philosophy</h1>
+
+<h2>
+<a name="best-practices" class="anchor" href="#best-practices"><span class="octicon octicon-link"></span></a>Best Practices</h2>
+
+<h3>
+<a name="documentation" class="anchor" href="#documentation"><span class="octicon octicon-link"></span></a>Documentation</h3>
+
+<ul>
+<li>Provide <strong>all</strong> documentation within the project. High level or all detail documentation should be stored in the README.md</li>
+<li>Everything that needs to happen to set up a working development environment</li>
+<li>If there’s a build step, the command needed to build out the project</li>
+<li>Project Directory Tree should mimic what the industry does for JS projects</li>
+<li>GIT all your files</li>
+<li>
+<p>Use a <em>real</em> IDE. Although we shouldn’t discriminate by text editor, IDEs that save time and money are what business owners are looking for. The greater industry of development also appreciates everyone knowing the top tier IDEs.</p>
+
+<ul>
+<li>Netbeans vs Sublime</li>
+</ul>
+</li>
+<li><p><a href="https://github.com/yeoman/generator-angular">Yeoman::Angular::Grunt</a></p></li>
+<li>
+<a href="https://github.com/henyojess/generator-gulp-ng">Yeoman::Angular::Gulp</a> **</li>
+</ul><h2>
+<a name="directory-structure" class="anchor" href="#directory-structure"><span class="octicon octicon-link"></span></a>Directory Structure</h2>
+
+<pre>
+    app/
+        images/
+        scripts/
+            main.js
+            config.js
+            controllers/
+            constants/
+            directives/
+            enums/
+            filters/
+            services/
+        scss/
+            core/
+            deps/
+            components/
+            theme/
+        views/
+            index.html
+    package.json
+    bower_components
+</pre>
+
+<h2>
+<a name="consistent-nomenclature" class="anchor" href="#consistent-nomenclature"><span class="octicon octicon-link"></span></a>Consistent Nomenclature</h2>
+
+<ul>
+<li>CSS / HTML
+
+<ul>
+<li><a href="https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml">https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml</a></li>
+<li>BEM, SMACSS, or similar naming conventions
+
+<ul>
+<li>global-header, bio , bio-image, bio-image-small</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Javascript
+
+<ul>
+<li><a href="https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml">https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml</a></li>
+<li><a href="https://github.com/airbnb/javascript">https://github.com/airbnb/javascript</a></li>
+</ul>
+</li>
+</ul><h2>
+<a name="recommendations" class="anchor" href="#recommendations"><span class="octicon octicon-link"></span></a>Recommendations</h2>
+
+<ul>
+<li>Use popular technologies. Going rogue will only cause problems for new devs on a project and could cause potential problems when doing research
+
+<ul>
+<li>SCSS</li>
+<li>Yeoman</li>
+<li>Coffeescript</li>
+<li>Angular JS</li>
+</ul>
+</li>
+</ul><h2>
+<a name="maintainability" class="anchor" href="#maintainability"><span class="octicon octicon-link"></span></a>Maintainability</h2>
+
+<ul>
+<li>Follow existing standards
+
+<ul>
+<li>If there’s an opportunity to improve that is a low effort/cost: Improve it</li>
+<li>Develope under the assumption you are not the one maintaining the code base</li>
+</ul>
+</li>
+</ul><h2>
+<a name="modulization-of-cssjshtml" class="anchor" href="#modulization-of-cssjshtml"><span class="octicon octicon-link"></span></a>Modulization of CSS/JS/HTML</h2>
+
+<p>See /examples folder </p>
+
+<h3>
+<a name="component-principles-to-follow" class="anchor" href="#component-principles-to-follow"><span class="octicon octicon-link"></span></a>Component Principles to Follow</h3>
+
+<ul>
+<li>Components should be self contained</li>
+<li>Components should do one thing very well</li>
+<li>Should reuse other components as much as possible</li>
+<li>Components should be extensible</li>
+<li>Components can be defined at any degree
+
+<ul>
+<li>e.g.: Responsive Wrapper, Header, navigation, primary button</li>
+</ul>
+</li>
+<li>
+<strong>Use Bower to Handle Components when possible</strong> see .bowerrc, bower.json</li>
+</ul><h2>
+<a name="time-estimation" class="anchor" href="#time-estimation"><span class="octicon octicon-link"></span></a>Time Estimation</h2>
+
+<ul>
+<li>Reconnaissance
+
+<ul>
+<li>Gathering Information about a Project</li>
+<li>The more details about the Project the better, assumptions create risk</li>
+</ul>
+</li>
+<li>Company evaluation
+
+<ul>
+<li>Business Evaluation
+
+<ul>
+<li>Business
+
+<ul>
+<li>how many hours have been predefined? Does that align with what you think that might take?</li>
+<li>What’s the purpose / what are you trying to solve?</li>
+</ul>
+</li>
+<li>Technical
+
+<ul>
+<li>How long will it take to create using a certain library/utility/framework?</li>
+</ul>
+</li>
+<li>Creative
+
+<ul>
+<li>Design direction and UX recommendations</li>
+</ul>
+</li>
+<li>Complexity Level from all </li>
+<li>Risks and Opportunities</li>
+</ul>
+</li>
+<li>FED Evaluation
+
+<ul>
+<li>Browser Compatibility
+
+<ul>
+<li><strong>Ask for browser support. OSX vs Windows. There’s a difference between Firefox on Mobile and in the browser. Get a defined list.</strong></li>
+</ul>
+</li>
+<li>Responsive Principles</li>
+<li>Frameworks to leverage
+
+<ul>
+<li>Grid frameworks like Susy vs whipping up your own</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Research &amp; Development</li>
+</ul>
+</li>
+<li>Scoping Requirements and hourly Estimation
+
+<ul>
+<li>Estimation Overview
+
+<ul>
+<li>Calculate hours on all requirements</li>
+<li>Calculate hours and add padding on certain risks</li>
+<li>Add padding for certain levels of complexity
+
+<ul>
+<li>browser support</li>
+<li>creating new ideas</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Breakdown scoped requirements for estimation
+
+<ul>
+<li>Componetize Everything</li>
+<li>Headers</li>
+<li>Footers</li>
+<li>Side Bar</li>
+<li>Navigation</li>
+</ul>
+</li>
+<li>Secondary Requirements
+
+<ul>
+<li>Padding for potential browser compatibility issues</li>
+<li>Padding for potential responsive defects</li>
+<li>PITA Padding</li>
+</ul>
+</li>
+<li>Solutions for Potential Risks
+
+<ul>
+<li>Coming up with Fallbacks:
+
+<ul>
+<li>Plan A (CSS3)</li>
+<li>Plan B (JQuery)</li>
+<li>Plan C (Escalating to Higher Power)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><h2>
+<a name="work-ethic" class="anchor" href="#work-ethic"><span class="octicon octicon-link"></span></a>Work Ethic</h2>
+
+<ul>
+<li>Consultation for Self and Others
+
+<ul>
+<li>Proactive
+
+<ul>
+<li>Reach out and help provide a solution to potential problem areas</li>
+</ul>
+</li>
+<li>Provide <strong>at least two</strong> solutions to any given problem
+
+<ul>
+<li>See "Solutions for Potential Risks"</li>
+</ul>
+</li>
+<li>Ability to consult to any discipline</li>
+</ul>
+</li>
+<li>Understanding Multiple Disciplines
+
+<ul>
+<li>Creative
+
+<ul>
+<li>Tools
+
+<ul>
+<li>Photoshop Workflow</li>
+<li>Sketching</li>
+<li>Wireframing</li>
+</ul>
+</li>
+<li>Creative Process
+
+<ul>
+<li>User Personas</li>
+<li>Usability</li>
+</ul>
+</li>
+<li>Business Objectives
+
+<ul>
+<li>Scoping</li>
+<li>Budget</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Backend</li>
+<li>Dev Ops</li>
+<li>Production</li>
+<li>Support</li>
+</ul>
+</li>
+</ul><h2>
+<a name="continuous-self-learning" class="anchor" href="#continuous-self-learning"><span class="octicon octicon-link"></span></a>Continuous Self Learning</h2>
+
+<ul>
+<li>Staying Up-to-date
+
+<ul>
+<li><a href="http://html5rocks.com">http://html5rocks.com</a></li>
+<li><a href="http://thechangelog.com">http://thechangelog.com/</a></li>
+<li><a href="http://docs.webplatform.org/wiki/Main_Page">http://docs.webplatform.org/wiki/Main_Page</a></li>
+<li><a href="http://tympanus.net/codrops/">http://tympanus.net/codrops/</a></li>
+<li><a href="http://superherojs.com/">http://superherojs.com/</a></li>
+<li><a href="http://www.sitepoint.com/">http://www.sitepoint.com/</a></li>
+</ul>
+</li>
+<li>Community Leaders
+
+<ul>
+<li><a href="Paul%20Irish">http://paulirish.com</a></li>
+<li><a href="Addy%20Osmani">http://addyosmani.com</a></li>
+<li><a href="Nicholas%20Zackas">http://www.nczonline.net</a></li>
+</ul>
+</li>
+<li>Latest Utilities/Frameworks And When To Use Them
+
+<ul>
+<li>AngularJs, jQuery, etc
+
+<ul>
+<li><a href="Angular%20JS%20Docs">http://docs.angularjs.com</a></li>
+<li><a href="Egghead.io">http://egghead.io</a></li>
+<li><a href="Jquery%20Docs">http://docs.jquery.com</a></li>
+</ul>
+</li>
+<li>Knowing Resources Available for Research
+
+<ul>
+<li>Stackoverflow</li>
+<li>IRC/Twitter
+
+<ul>
+<li>Plenty of great channels for instant help</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Understanding Latest Techniques
+
+<ul>
+<li>Compatible CSS from IE8 to Chrome</li>
+<li>Responsive (breakpoints) vs. Adaptive (device)</li>
+<li>CSS Animations &amp; Effects</li>
+<li>Performant Alternative Solutions (Choosing the right library)
+
+<ul>
+<li>Is Jquery really worth it?</li>
+<li>Onloading GPU</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/ppiekarczyk/onenorth-fed-philosophy/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/ppiekarczyk/onenorth-fed-philosophy/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/ppiekarczyk/onenorth-fed-philosophy"></a> is maintained by <a href="https://github.com/ppiekarczyk">ppiekarczyk</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
