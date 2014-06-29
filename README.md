@@ -1,20 +1,16 @@
 # One North FED Philosophy
 
+## Documentation
 
-## Best Practices
+Documentation is the most important step and is required for every build. It doesn't take more than 15 minutes and it's great to lay out your toolkit so there are no surprises later on in the build. Get this out of the way, first. Make changes as you go along.
 
-### Documentation
-
-We store everything on GIT, so make sure you set up a bitbucket repo and upload everything there. 
-Documentation is required for every build. It doesn't take more than 15 minutes and it's great to lay out your toolkit so there are no surprises later on in the build.
-
-#### Browser Support
+### Browser Support
 - Provide **all** documentation within the project.
 
 Most projects will be IE9+ 
 **check to make sure - don't shoot yourself in the foot by going with an IE9+ utility only to realize you need IE8 support**
 
-List out complete browsr support inside the README.md. If you're not sure about something, get it in an email and list it here. **There is a difference between Chrome on an IPhone and Android. There are differences between Android Phones**
+List out complete browser support inside the README.md. If you're not sure about something, get it in an email and list it here. **There is a difference between Chrome on an IPhone and Android. There are differences between Android Phones**
 
 - IE 9+ 
 - Chrome 20+
@@ -24,6 +20,18 @@ List out complete browsr support inside the README.md. If you're not sure about 
 - Android Chrome Browser (Edge)
 - Safari 6+ (OSX)
 
+### Technologies 
+
+List out the utilities / frameworks you're going to be using for the project. If there are any issues, or technologies in question, list these under compatibility notes.
+
+- SCSS 3.3+ (Ruby)
+- Angular JS 1.3+ (IE9+)
+- jQuery 1.10.0 _see compatibility notes_
+- Font Awesome (4.2.1) (IE9+)
+
+### Compatibility Notes 
+
+If there is something that doesn't fall under an assumption, list it here
 
 
 - Everything that needs to happen to set up a working development environment
@@ -35,6 +43,9 @@ List out complete browsr support inside the README.md. If you're not sure about 
 	
 - [Yeoman::Angular::Grunt](https://github.com/yeoman/generator-angular)
 - [Yeoman::Angular::Gulp](https://github.com/henyojess/generator-gulp-ng) **
+
+## Project Scaffold
+We store everything on GIT, so make sure you set up a bitbucket repo and upload everything there. 
 
 ## Directory Structure
 <pre>
