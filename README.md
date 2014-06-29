@@ -14,7 +14,7 @@ TLDR; Categories Required:
 
 Provide **all** documentation within the project.
 
-**Most projects will be IE9+ **
+**Most projects will be IE9+**
 - Check to make sure - don't shoot yourself in the foot by going with an IE9+ utility only to realize you need IE8 support
 
 **List out complete browser support inside the README.md**
