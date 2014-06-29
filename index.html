@@ -115,36 +115,55 @@
 <li><code>npm install</code></li>
 <li><code>bower install</code></li>
 </ul><h1>
-<a name="project-scaffold" class="anchor" href="#project-scaffold"><span class="octicon octicon-link"></span></a>Project Scaffold</h1>
-
-<p>We store everything on GIT, so make sure you set up a bitbucket repo and upload everything there. </p>
+<a name="project-setup--scaffold" class="anchor" href="#project-setup--scaffold"><span class="octicon octicon-link"></span></a>Project Setup &amp; Scaffold</h1>
 
 <ul>
+<li>Create a GIT repo on Bitbucket.</li>
 <li>Project Directory Tree should mimic what the industry does for JS projects</li>
-<li>Use a <em>real</em> IDE. Although we shouldn’t discriminate by text editor, IDEs that save time and money are what business owners are looking for. The greater industry of development also appreciates everyone knowing the top tier IDEs.
+<li>Use a <em>real</em> IDE. Although we shouldn’t discriminate by text editor, IDEs that save time and money are what business owners are looking for. The greater industry of development also appreciates everyone knowing the top tier IDEs.</li>
+</ul><h4>
+<a name="common-editors--ides-youll-see" class="anchor" href="#common-editors--ides-youll-see"><span class="octicon octicon-link"></span></a>Common Editors / IDE's You'll see</h4>
 
 <ul>
-<li>Netbeans vs Sublime</li>
+<li>Netbeans</li>
+<li>Sublime Text</li>
+<li>Webstorm</li>
+<li>VIM</li>
+</ul><h2>
+<a name="scaffolding-out-a-project-tbd" class="anchor" href="#scaffolding-out-a-project-tbd"><span class="octicon octicon-link"></span></a>Scaffolding Out a Project (TBD)</h2>
+
+<h3>
+<a name="angular-projects" class="anchor" href="#angular-projects"><span class="octicon octicon-link"></span></a>Angular Projects:</h3>
+
+<ul>
+<li><a href="https://github.com/yeoman/generator-angular">Yeoman - AngularJS</a></li>
+</ul><h3>
+<a name="lightweight-projects" class="anchor" href="#lightweight-projects"><span class="octicon octicon-link"></span></a>Lightweight Projects:</h3>
+
+<ul>
+<li>
+<a href="https://github.com/yeoman/generator-gulp-webapp">Yeoman - Gulp-webapp</a>
+
+<ul>
+<li><a href="https://github.com/yeoman/generator-gulp-webapp/blob/master/docs/recipes/README.md">Recipes will make your life easier</a></li>
 </ul>
 </li>
-</ul><h1>
-<a name="git-early-git-often" class="anchor" href="#git-early-git-often"><span class="octicon octicon-link"></span></a>GIT Early, GIT Often</h1>
-
-<p>We cannot stress this enough. GIT After Every:</p>
+</ul><p>Includes:</p>
 
 <ul>
-<li>Module</li>
-<li>Component</li>
-<li>Feature</li>
-<li>10 LOC (as an extreme example)</li>
-</ul><h2>
-<a name="do-not-commit-after-a-full-days-of-work" class="anchor" href="#do-not-commit-after-a-full-days-of-work"><span class="octicon octicon-link"></span></a>DO NOT commit after a full day's of work.</h2>
+<li>Gulp</li>
+<li>Sass</li>
+<li>Bootstrap (chances are you won't need this)</li>
+<li>Modernizr</li>
+</ul><p>Any additional components are installed as easily as running bower search and install:</p>
 
 <ul>
-<li><a href="https://github.com/yeoman/generator-angular">Yeoman::Angular::Grunt</a></li>
-<li>
-<a href="https://github.com/henyojess/generator-gulp-ng">Yeoman::Angular::Gulp</a> **</li>
-</ul><h2>
+<li> <code>bower search jQuery</code> </li>
+<li> <code>bower install jQuery --save</code>
+</li>
+</ul><p>Learn more about installing and using Yeoman <a href="http://yeoman.io/learning/index.html">here</a>.</p>
+
+<h2>
 <a name="directory-structure" class="anchor" href="#directory-structure"><span class="octicon octicon-link"></span></a>Directory Structure</h2>
 
 <pre>
@@ -171,6 +190,19 @@
 </pre>
 
 <h2>
+<a name="git-early-git-often" class="anchor" href="#git-early-git-often"><span class="octicon octicon-link"></span></a>GIT Early, GIT Often</h2>
+
+<p>We cannot stress this enough. GIT After Every:</p>
+
+<ul>
+<li>Module</li>
+<li>Component</li>
+<li>Feature</li>
+<li>10 LOC (as an extreme example)</li>
+</ul><h2>
+<a name="do-not-commit-after-a-full-days-of-work" class="anchor" href="#do-not-commit-after-a-full-days-of-work"><span class="octicon octicon-link"></span></a>DO NOT commit after a full day's of work.</h2>
+
+<h2>
 <a name="consistent-nomenclature" class="anchor" href="#consistent-nomenclature"><span class="octicon octicon-link"></span></a>Consistent Nomenclature</h2>
 
 <ul>
@@ -178,19 +210,33 @@
 
 <ul>
 <li><a href="https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml">https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml</a></li>
-<li>BEM, SMACSS, or similar naming conventions
+<li>BEM, SMACSS, or similar naming conventions</li>
+</ul>
+</li>
+</ul><pre><code>
+    .bio {
+
+    }
+
+    .bio-image {
+        width:200px;
+        height:200px;
+    }
+
+    .bio-image-small {
+        width:100px;
+        height:100px;
+
+    }
+
+</code></pre>
 
 <ul>
-<li>global-header, bio , bio-image, bio-image-small</li>
-</ul>
-</li>
-</ul>
-</li>
 <li>Javascript
 
 <ul>
-<li><a href="https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml">https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml</a></li>
-<li><a href="https://github.com/airbnb/javascript">https://github.com/airbnb/javascript</a></li>
+<li><a href="https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml">Google JS Styleguide</a></li>
+<li><a href="https://github.com/airbnb/javascript">Airbnb JS Styleguide</a></li>
 </ul>
 </li>
 </ul><h2>
@@ -226,30 +272,28 @@
 <a name="component-principles-to-follow" class="anchor" href="#component-principles-to-follow"><span class="octicon octicon-link"></span></a>Component Principles to Follow</h3>
 
 <ul>
-<li>Components should be self contained</li>
-<li>Components should do one thing very well</li>
-<li>Should reuse other components as much as possible</li>
-<li>Components should be extensible</li>
-<li>Components can be defined at any degree
+<li>Self contained</li>
+<li>One Thing Very Well</li>
+<li>Extensible</li>
+<li>Defined at any degree
 
 <ul>
 <li>e.g.: Responsive Wrapper, Header, navigation, primary button</li>
 </ul>
 </li>
-<li>
-<strong>Use Bower to Handle Components when possible</strong> see .bowerrc, bower.json</li>
-</ul><h2>
-<a name="time-estimation" class="anchor" href="#time-estimation"><span class="octicon octicon-link"></span></a>Time Estimation</h2>
+<li>Reuse other components as much as possible</li>
+<li>Use Bower to Handle Components when possible</li>
+</ul><h1>
+<a name="time-estimation" class="anchor" href="#time-estimation"><span class="octicon octicon-link"></span></a>Time Estimation</h1>
 
-<ul>
-<li>Reconnaissance
+<h2>
+<a name="reconnaissance" class="anchor" href="#reconnaissance"><span class="octicon octicon-link"></span></a>Reconnaissance</h2>
 
 <ul>
 <li>Gathering Information about a Project</li>
 <li>The more details about the Project the better, assumptions create risk</li>
-</ul>
-</li>
-<li>Company evaluation
+</ul><h2>
+<a name="company-evaluation" class="anchor" href="#company-evaluation"><span class="octicon octicon-link"></span></a>Company evaluation</h2>
 
 <ul>
 <li>Business Evaluation
@@ -285,8 +329,6 @@
 
 <ul>
 <li><strong>Ask for browser support. OSX vs Windows. There’s a difference between Firefox on Mobile and in the browser. Get a defined list.</strong></li>
-</ul>
-</li>
 <li>Responsive Principles</li>
 <li>Frameworks to leverage
 
@@ -299,7 +341,8 @@
 <li>Research &amp; Development</li>
 </ul>
 </li>
-<li>Scoping Requirements and hourly Estimation
+</ul><h2>
+<a name="scoping-requirements-and-hourly-estimation" class="anchor" href="#scoping-requirements-and-hourly-estimation"><span class="octicon octicon-link"></span></a>Scoping Requirements and hourly Estimation</h2>
 
 <ul>
 <li>Estimation Overview
@@ -347,13 +390,11 @@
 </li>
 </ul>
 </li>
-</ul>
-</li>
-</ul><h2>
-<a name="work-ethic" class="anchor" href="#work-ethic"><span class="octicon octicon-link"></span></a>Work Ethic</h2>
+</ul><h1>
+<a name="work-ethic" class="anchor" href="#work-ethic"><span class="octicon octicon-link"></span></a>Work Ethic</h1>
 
-<ul>
-<li>Consultation for Self and Others
+<h2>
+<a name="consultation-for-self-and-others" class="anchor" href="#consultation-for-self-and-others"><span class="octicon octicon-link"></span></a>Consultation for Self and Others</h2>
 
 <ul>
 <li>Proactive
@@ -368,12 +409,8 @@
 <li>See "Solutions for Potential Risks"</li>
 </ul>
 </li>
-<li>Ability to consult to any discipline</li>
-</ul>
-</li>
-<li>Understanding Multiple Disciplines
-
-<ul>
+<li>Ability to consult to any discipline
+## Understanding Multiple Disciplines</li>
 <li>Creative
 
 <ul>
@@ -405,13 +442,11 @@
 <li>Dev Ops</li>
 <li>Production</li>
 <li>Support</li>
-</ul>
-</li>
-</ul><h2>
-<a name="continuous-self-learning" class="anchor" href="#continuous-self-learning"><span class="octicon octicon-link"></span></a>Continuous Self Learning</h2>
+</ul><h1>
+<a name="continuous-self-learning" class="anchor" href="#continuous-self-learning"><span class="octicon octicon-link"></span></a>Continuous Self Learning</h1>
 
-<ul>
-<li>Staying Up-to-date
+<h2>
+<a name="staying-up-to-date" class="anchor" href="#staying-up-to-date"><span class="octicon octicon-link"></span></a>Staying Up-to-date</h2>
 
 <ul>
 <li><a href="http://html5rocks.com">http://html5rocks.com</a></li>
@@ -420,17 +455,15 @@
 <li><a href="http://tympanus.net/codrops/">http://tympanus.net/codrops/</a></li>
 <li><a href="http://superherojs.com/">http://superherojs.com/</a></li>
 <li><a href="http://www.sitepoint.com/">http://www.sitepoint.com/</a></li>
-</ul>
-</li>
-<li>Community Leaders
+</ul><h2>
+<a name="community-leaders" class="anchor" href="#community-leaders"><span class="octicon octicon-link"></span></a>Community Leaders</h2>
 
 <ul>
 <li><a href="Paul%20Irish">http://paulirish.com</a></li>
 <li><a href="Addy%20Osmani">http://addyosmani.com</a></li>
 <li><a href="Nicholas%20Zackas">http://www.nczonline.net</a></li>
-</ul>
-</li>
-<li>Latest Utilities/Frameworks And When To Use Them
+</ul><h2>
+<a name="latest-utilitiesframeworks-and-when-to-use-them" class="anchor" href="#latest-utilitiesframeworks-and-when-to-use-them"><span class="octicon octicon-link"></span></a>Latest Utilities/Frameworks And When To Use Them</h2>
 
 <ul>
 <li>AngularJs, jQuery, etc
@@ -453,9 +486,8 @@
 </li>
 </ul>
 </li>
-</ul>
-</li>
-<li>Understanding Latest Techniques
+</ul><h2>
+<a name="understanding-latest-techniques" class="anchor" href="#understanding-latest-techniques"><span class="octicon octicon-link"></span></a>Understanding Latest Techniques</h2>
 
 <ul>
 <li>Compatible CSS from IE8 to Chrome</li>
@@ -468,8 +500,43 @@
 <li>Onloading GPU</li>
 </ul>
 </li>
+</ul><h2>
+<a name="responsive-implementations" class="anchor" href="#responsive-implementations"><span class="octicon octicon-link"></span></a>Responsive Implementations</h2>
+
+<ul>
+<li>Desktop First
+
+<ul>
+<li>Prototype mobile HTML layout but leave functionality and styling to the end</li>
 </ul>
 </li>
+<li>Mobile First
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/Apps/app_layout/Mobile_first">MDN - Mobile First</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/layouts/rwd-patterns/">Google - Responsive Design Patterns</a></li>
+</ul>
+</li>
+</ul><h2>
+<a name="performance" class="anchor" href="#performance"><span class="octicon octicon-link"></span></a>Performance</h2>
+
+<ul>
+<li>Stress / Smoking Testing</li>
+<li>Proficiency in ALL Dev tools for each browser</li>
+<li>Proficiency in using profiling tools and understanding data</li>
+</ul><h2>
+<a name="fed-philosophy" class="anchor" href="#fed-philosophy"><span class="octicon octicon-link"></span></a>FED Philosophy</h2>
+
+<ul>
+<li>FED is an expert in the fields a full stack developer is only familiar with</li>
+<li>Identifying potential issues with a design that might have poor usability</li>
+<li>Find a time to share knowledge (1hr meetings to discuss projects, new technologies, etc.)</li>
+</ul><h2>
+<a name="code-reviews" class="anchor" href="#code-reviews"><span class="octicon octicon-link"></span></a>Code Reviews</h2>
+
+<ul>
+<li>Developers should review their own code and peer review others. MAX 15 minutes for yourself and MAX 15 minutes for others. </li>
+<li>This should be done on a daily basis (Don't GIT a whole day's worth of work!)</li>
 </ul>
         </section>
 
