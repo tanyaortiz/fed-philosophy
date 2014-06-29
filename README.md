@@ -4,7 +4,28 @@
 ## Best Practices
 
 ### Documentation
-- Provide **all** documentation within the project. High level or all detail documentation should be stored in the README.md
+
+We store everything on GIT, so make sure you set up a bitbucket repo and upload everything there. 
+Documentation is required for every build. It doesn't take more than 15 minutes and it's great to lay out your toolkit so there are no surprises later on in the build.
+
+#### Browser Support
+- Provide **all** documentation within the project.
+
+Most projects will be IE9+ 
+**check to make sure - don't shoot yourself in the foot by going with an IE9+ utility only to realize you need IE8 support**
+
+List out complete browsr support inside the README.md. If you're not sure about something, get it in an email and list it here. **There is a difference between Chrome on an IPhone and Android. There are differences between Android Phones**
+
+- IE 9+ 
+- Chrome 20+
+- Firefox 7+
+- iOS 6+ Mobile Safari
+- Android 4.x+ Browser
+- Android Chrome Browser (Edge)
+- Safari 6+ (OSX)
+
+
+
 - Everything that needs to happen to set up a working development environment
 - If there’s a build step, the command needed to build out the project
 - Project Directory Tree should mimic what the industry does for JS projects
