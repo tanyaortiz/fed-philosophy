@@ -89,6 +89,7 @@ Any commands that require execution
 ### Angular Projects:
 
 - [Yeoman - AngularJS](https://github.com/yeoman/generator-angular)
+	-[Google AngularJS Best Practies Recommendations](https://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub)
 
 ### Lightweight Projects:
 - [Yeoman - Gulp-webapp](https://github.com/yeoman/generator-gulp-webapp)
