@@ -329,3 +329,12 @@ See /examples folder
 ## Code Reviews
 - Developers should review their own code and peer review others. MAX 15 minutes for yourself and MAX 15 minutes for others. 
 - This should be done on a daily basis (Don't GIT a whole day's worth of work!)
+
+## jQuery vs Native Javascript 
+
+```javascript
+document.querySelectorAll();
+document.getElementById();
+document.getElementsByClassName();
+
+```
