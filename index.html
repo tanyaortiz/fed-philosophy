@@ -524,20 +524,6 @@
 </ul>
 </li>
 </ul><h2>
-<a name="performance" class="anchor" href="#performance"><span class="octicon octicon-link"></span></a>Performance</h2>
-
-<ul>
-<li>Stress / Smoking Testing</li>
-<li>Proficiency in ALL Dev tools for each browser</li>
-<li>Proficiency in using profiling tools and understanding data</li>
-</ul><h2>
-<a name="fed-philosophy" class="anchor" href="#fed-philosophy"><span class="octicon octicon-link"></span></a>FED Philosophy</h2>
-
-<ul>
-<li>FED is an expert in the fields a full stack developer is only familiar with</li>
-<li>Identifying potential issues with a design that might have poor usability</li>
-<li>Find a time to share knowledge (1hr meetings to discuss projects, new technologies, etc.)</li>
-</ul><h2>
 <a name="code-reviews" class="anchor" href="#code-reviews"><span class="octicon octicon-link"></span></a>Code Reviews</h2>
 
 <ul>
@@ -546,11 +532,101 @@
 </ul><h2>
 <a name="jquery-vs-native-javascript" class="anchor" href="#jquery-vs-native-javascript"><span class="octicon octicon-link"></span></a>jQuery vs Native Javascript</h2>
 
-<div class="highlight highlight-javascript"><pre><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">();</span>
+<p>Is it really worth using jQuery for some of the projects you're asked to work on? If it's something small, IE9+ many of the selectors you're using to are about <strong>60x</strong> faster than their jQuery equivalent.</p>
+
+<div class="highlight highlight-javascript"><pre>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'.element'</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">'newClass'</span><span class="p">);</span> 
+
+<span class="nx">vs</span><span class="p">.</span> 
+
+<span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'.element'</span><span class="p">).</span><span class="nx">className</span> <span class="o">=</span> <span class="s1">'newClass'</span><span class="p">;</span> <span class="nx">IE8</span><span class="o">+</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="s1">'element'</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="nx">className</span> <span class="o">=</span> <span class="s1">'newClass'</span><span class="p">;</span> <span class="nx">IE9</span><span class="o">+</span>
+
+<span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">();</span>
 <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">();</span>
-<span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">();</span>
 
 </pre></div>
+
+<div class="highlight highlight-javascript"><pre>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'.element'</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="s1">'&lt;p&gt;Paragraph&lt;/p&gt;'</span><span class="p">);</span>
+
+<span class="nx">vs</span><span class="p">.</span>
+
+<span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="s1">'element'</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="nx">innerHTML</span> <span class="o">+=</span> <span class="s1">'&lt;p&gt;Paragraph&lt;/p&gt;'</span><span class="p">;</span>
+
+</pre></div>
+
+<div class="highlight highlight-javascript"><pre>
+<span class="kd">var</span> <span class="nx">$element</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'.element'</span><span class="p">);</span>
+
+<span class="nx">$element</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'clicked'</span><span class="p">);</span>
+    <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+<span class="p">});</span>
+
+<span class="nx">vs</span><span class="p">.</span> 
+
+<span class="kd">var</span> <span class="nx">_element</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="s1">'element'</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
+
+<span class="nx">_element</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'clicked'</span><span class="p">);</span>
+    <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+<span class="p">});</span>
+
+</pre></div>
+
+<div class="highlight highlight-javascript"><pre>
+<span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span> <span class="p">({</span>
+    <span class="nx">url</span><span class="o">:</span> <span class="s1">'website.com'</span><span class="p">,</span>
+    <span class="nx">type</span><span class="o">:</span> <span class="s1">'POST'</span><span class="p">,</span>
+    <span class="nx">data</span><span class="o">:</span> <span class="s1">'a=10&amp;b=4'</span><span class="p">,</span>
+    <span class="nx">success</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">d</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">d</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="nx">vs</span><span class="p">.</span>
+
+<span class="kd">var</span> <span class="nx">xhr</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
+
+<span class="nx">xhr</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s2">"POST"</span><span class="p">,</span> <span class="s2">"website.com"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+
+<span class="nx">xhr</span><span class="p">.</span><span class="nx">onreadystatechange</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">xhr</span><span class="p">.</span><span class="nx">readyState</span> <span class="o">!=</span> <span class="mi">4</span> <span class="o">||</span> <span class="nx">xhr</span><span class="p">.</span><span class="nx">status</span> <span class="o">!=</span> <span class="mi">200</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">xhr</span><span class="p">.</span><span class="nx">responseText</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="nx">xhr</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s2">"a=10&amp;b=4"</span><span class="p">);</span>
+
+</pre></div>
+
+<h2>
+<a name="performance" class="anchor" href="#performance"><span class="octicon octicon-link"></span></a>Performance</h2>
+
+<ul>
+<li>Stress / Smoke Testing</li>
+<li>Proficiency in ALL Dev tools for each browser
+
+<ul>
+<li>Chrome Dev Tools</li>
+<li>Firefox Dev Tools / Firebug</li>
+<li>IE F12 Tools</li>
+</ul>
+</li>
+<li>Proficiency in using profiling tools and understanding data
+
+<ul>
+<li>Understand what every tab inside Chrome Dev Tools does and why</li>
+</ul>
+</li>
+</ul><h2>
+<a name="fed-philosophy" class="anchor" href="#fed-philosophy"><span class="octicon octicon-link"></span></a>FED Philosophy</h2>
+
+<ul>
+<li>A FED is an expert in the fields a full stack developer is only familiar with</li>
+<li>A FED should identify potential issues with a design that might have poor usability</li>
+<li>A FED should find a time to share knowledge amongst other teams within the company.</li>
+</ul>
         </section>
 
         <footer>
