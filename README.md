@@ -301,6 +301,7 @@ See /examples folder
 	- IRC/Twitter
 		- Plenty of great channels for instant help
 		
+
 ## Understanding Latest Techniques
 - Compatible CSS from IE8 to Chrome
 - Responsive (breakpoints) vs. Adaptive (device)
@@ -315,26 +316,70 @@ See /examples folder
 - Mobile First
 	- [MDN - Mobile First](https://developer.mozilla.org/en-US/Apps/app_layout/Mobile_first)
 	- [Google - Responsive Design Patterns](https://developers.google.com/web/fundamentals/layouts/rwd-patterns/)
+
 	
-## Performance
-- Stress / Smoking Testing
-- Proficiency in ALL Dev tools for each browser
-- Proficiency in using profiling tools and understanding data
-
-## FED Philosophy
-- FED is an expert in the fields a full stack developer is only familiar with
-- Identifying potential issues with a design that might have poor usability
-- Find a time to share knowledge (1hr meetings to discuss projects, new technologies, etc.)
-
 ## Code Reviews
 - Developers should review their own code and peer review others. MAX 15 minutes for yourself and MAX 15 minutes for others. 
 - This should be done on a daily basis (Don't GIT a whole day's worth of work!)
 
 ## jQuery vs Native Javascript 
 
+Is it really worth using jQuery for some of the projects you're asked to work on? If it's something small, IE9+ many of the selectors you're using to are about **60x** faster than their jQuery equivalent.
+
 ```javascript
+
+$('.element').addClass('newClass'); 
+
+vs. 
+
+document.querySelector('.element').className = 'newClass'; IE8+
+document.getElementsByClassName('element')[0].className = 'newClass'; IE9+
+
 document.querySelectorAll();
 document.getElementById();
-document.getElementsByClassName();
 
 ```
+
+```javascript
+
+$('.element').append('<p>Paragraph</p>');
+
+vs.
+
+document.getElementsByClassName('element')[0].innerHTML += '<p>Paragraph</p>';
+
+```
+
+```javascript
+
+var $element = $('.element');
+
+$element.on('click', function(e) {
+	console.log('clicked');
+	e.preventDefault();
+});
+
+vs. 
+
+var _element = document.getElementsByClassName('element')[0];
+
+_element.addEventListener('click', function(e) {
+	console.log('clicked');
+	e.preventDefault();
+});
+
+```
+
+## Performance
+- Stress / Smoke Testing
+- Proficiency in ALL Dev tools for each browser
+	- Chrome Dev Tools
+	- Firefox Dev Tools / Firebug
+	- IE F12 Tools
+- Proficiency in using profiling tools and understanding data
+	- Understand what every tab inside Chrome Dev Tools does and why
+
+## FED Philosophy
+- A FED is an expert in the fields a full stack developer is only familiar with
+- A FED should identify potential issues with a design that might have poor usability
+- A FED should find a time to share knowledge amongst other teams within the company.
