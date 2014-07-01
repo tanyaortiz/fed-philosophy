@@ -370,6 +370,32 @@ _element.addEventListener('click', function(e) {
 
 ```
 
+```javascript
+
+$.ajax ({
+	url: 'website.com',
+	type: 'POST',
+	data: 'a=10&b=4',
+	success: function (d) {
+		console.log(d);
+	}
+});
+
+vs.
+
+var xhr = new XMLHttpRequest();
+
+xhr.open("POST", "website.com", true);
+
+xhr.onreadystatechange = function() {
+	if (xhr.readyState != 4 || xhr.status != 200) return;
+	console.log(xhr.responseText);
+};
+
+xhr.send("a=10&b=4");
+
+```
+
 ## Performance
 - Stress / Smoke Testing
 - Proficiency in ALL Dev tools for each browser
