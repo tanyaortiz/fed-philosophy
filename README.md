@@ -418,9 +418,11 @@ xhr.send("a=10&b=4");
 - When feature is complete, a request to merge into master ** pull request**
 - An individual who did not writ the code will 
 - **At no point should a developer merge their own code into master**
-- Compiled output should be ignored in `.gitignore`
-- 
+- Compiled output should be ignored in .gitignore
+
+
 ## Device Detection
 - DON'T DO IT!
+
 ## Feature Detection
 ## Graceful Degradation
