@@ -409,3 +409,18 @@ xhr.send("a=10&b=4");
 - A FED is an expert in the fields a full stack developer is only familiar with
 - A FED should identify potential issues with a design that might have poor usability
 - A FED should find a time to share knowledge amongst other teams within the company.
+
+# Topics Under Consideration
+## Continuous Integration
+- One Canonical Branch **master**
+- No developer will ever commit directly into master
+- Developer will branch off master on the feature they're working on. **feature branches**
+- When feature is complete, a request to merge into master ** pull request**
+- An individual who did not writ the code will 
+- **At no point should a developer merge their own code into master**
+- Compiled output should be ignored in `.gitignore`
+- 
+## Device Detection
+- DON'T DO IT!
+## Feature Detection
+## Graceful Degradation
