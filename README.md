@@ -305,8 +305,8 @@ Any commands that require execution
 - Production
 - Support
 		
-# Continuous Self Learning
-## Staying Up-to-date
+## Continuous Self Learning
+### Staying Up-to-date
 - [http://html5rocks.com](http://html5rocks.com)
 - [http://thechangelog.com/](http://thechangelog.com)
 - [http://docs.webplatform.org/wiki/Main_Page](http://docs.webplatform.org/wiki/Main_Page)
@@ -314,12 +314,12 @@ Any commands that require execution
 - [http://superherojs.com/](http://superherojs.com/)
 - [http://www.sitepoint.com/](http://www.sitepoint.com/)
 
-## Community Leaders
+### Community Leaders
 - [http://paulirish.com](Paul Irish)
 - [http://addyosmani.com](Addy Osmani)
 - [http://www.nczonline.net](Nicholas Zackas)
 
-## Latest Utilities/Frameworks And When To Use Them
+### Latest Utilities/Frameworks And When To Use Them
 - AngularJs, jQuery, etc
 	- [http://docs.angularjs.com](Angular JS Docs)
 	- [http://egghead.io](Egghead.io)
@@ -329,7 +329,7 @@ Any commands that require execution
 	- IRC/Twitter
 		- Plenty of great channels for instant help
 		
-## Understanding Latest Techniques
+### Understanding Latest Techniques
 - Compatible CSS from IE8 to Chrome
 - Responsive (breakpoints) vs. Adaptive (device)
 - CSS Animations & Effects
@@ -337,7 +337,7 @@ Any commands that require execution
 	- Is Jquery really worth it?
 	- Onloading GPU
 
-## Responsive Implementations
+### Responsive Implementations
 - Desktop First
 	- Prototype mobile HTML layout but leave functionality and styling to the end
 - Mobile First
