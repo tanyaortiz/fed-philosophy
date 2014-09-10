@@ -19,7 +19,7 @@ Put simply, front-end Developers work on client facing assets.  Here, FEDs play 
   - https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml
   - BEM, SMACSS, or similar naming conventions
 
-```
+```css
 
 	.bio {
 		
