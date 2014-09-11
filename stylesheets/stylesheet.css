@@ -46,6 +46,7 @@ table {
 	border-spacing: 0;
 }
 
+
 /* LAYOUT STYLES */
 body {
   font-size: 1.5em;
@@ -54,6 +55,7 @@ body {
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   color: #6d6d6d;
+  word-wrap: break-word;
 }
 
 a {
@@ -98,6 +100,10 @@ nav.toc {
 
 .toc ul {
   margin-bottom: 5px;
+}
+
+.toc a {
+  color: inherit;
 }
 
 .inner {
