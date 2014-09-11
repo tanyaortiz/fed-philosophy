@@ -1,3 +1,57 @@
+
+<nav class="toc">
+    <h1>Contents</h1>
+    <ul class="table">
+        <li>
+            <a href="#overview">Overview</a>
+            <ul>
+                <li><a href="#what-is-a-fed">What is a FED?</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#fed-guiding-principles">FED Guiding Principles</a>
+            <ul>
+                <li><a href="#maintainability">Maintainability</a></li>
+                <li><a href="#documentation">Documentation</a></li>
+                <li><a href="#performance">Performance</a></li>
+                <li><a href="#code-reviews">Code Reviews</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#technologies">Technologies</a>
+            <ul>
+                <li><a href="#recommendations">Recommendations</a></li>
+                <li><a href="#browser-support">Browser Support</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#environment-setup">Environment Setup</a>
+            <ul>
+                <li><a href="#project-setup--scaffold">Project Setup &amp; Scaffold</a></li>
+                <li><a href="#getting-up-and-running">Getting Up and Running</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#work-ethic">Work Ethic</a>
+            <ul>
+                <li><a href="#consultation-for-self-and-others">Consultation for Self and Others</a></li>
+                <li><a href="#continuous-self-learning">Continuous Self Learning</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#time-estimation">Time Estimation</a>
+            <ul>
+                <li><a href="#reconnaissance">Reconnaissance</a></li>
+                <li><a href="#company-evaluation">Company Evaluation</a></li>
+                <li><a href="#scoping-requirements-and-hourly-estimation">Scoping Requirements and Hourly Estimation</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#topics-under-consideration">Topics Under Consideration</a>
+        </li>
+    </ul>
+
+</nav>
 # Overview
 This living document is intended to present, organize and illustrate our practices in front-end development (FED).
 
