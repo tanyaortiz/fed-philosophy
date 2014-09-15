@@ -43,7 +43,7 @@
             <ul>
                 <li><a href="#reconnaissance">Reconnaissance</a></li>
                 <li><a href="#company-evaluation">Company Evaluation</a></li>
-                <li><a href="#scoping-requirements-and-hourly-estimation">Scoping Requirements and Hourly Estimation</a></li>
+                <li><a href="#scoping-requirements-and-hourly-estimation">Scoping Requirements & Hourly Estimation</a></li>
             </ul>
         </li>
         <li>
@@ -56,17 +56,17 @@
 This living document is intended to present, organize and illustrate our practices in front-end development (FED).
 
 ## What is a FED?
-Put simply, front-end Developers work on client facing assets.  Here, FEDs play a role in early stages of a project, working closely with creative and strategy to build prototypes and templates of sites.  FEDs also help in production and support stages of projects. 
+Put simply, Front-End Developers work on client-facing assets.  Here, FEDs play a role in the early stages of a project, working closely with creative and strategy to build website prototypes and templates.  FEDs also help in the production and support stages of projects. 
 
-- A FED is an expert in the fields a full stack developer is only familiar with
-- A FED should identify potential issues with a design that might have poor usability
+- A FED is an expert in the fields a full stack developer is only familiar with.
+- A FED should identify potential issues with a design that may lead to poor usability.
 - A FED should find a time to share knowledge amongst other teams within the company.
 
 # FED Guiding Principles
 ## Maintainability
 - Follow existing standards
-  - If there’s an opportunity to improve that is a low effort/cost: Improve it
-  - Develope under the assumption you are not the one maintaining the code base
+  - If there’s a low effort/cost opportunity to improve your codebase, improve it.
+  - Develop under the assumption that you are not the one maintaining the codebase.
 
 ### Consistent Nomenclature
 - CSS / HTML
@@ -107,8 +107,8 @@ See /examples folder
 - Extensible
 - Defined at any degree
   - e.g.: Responsive Wrapper, Header, navigation, primary button
-- Reuse other components as much as possible
-- Use Bower to Handle Components when possible
+- Reuse existing components as much as possible.
+- Use Bower to handle components when possible.
 
 ### GIT Early, GIT Often
 We cannot stress this enough. GIT After Every:
@@ -119,7 +119,7 @@ We cannot stress this enough. GIT After Every:
 - 10 lines of code (as an extreme example)
 
 ## Documentation
-Documentation is the most important step and is required for every build. It doesn't take more than 15 minutes and it's great to lay out your toolkit so there are no surprises later on in the build. Get this out of the way, first. Make changes as you go along.
+Documentation is the most important step and is required for every build. It takes no more than 15 minutes, and it's great to lay out your toolkit so there are no surprises later on in the build. Get this out of the way first, and make changes as you go along.
 
 TLDR; Categories Required:
 
@@ -132,10 +132,10 @@ TLDR; Categories Required:
 
 ## Performance
 - Stress / Smoke Testing
-- Proficiency in ALL Dev tools for each browser
-	- Chrome Dev Tools
-	- Firefox Dev Tools / Firebug
-	- IE F12 Tools
+- Proficiency in ALL dev tools for each browser
+	- Chrome DevTools
+	- Firefox Developer Tools / Firebug
+	- IE F12 Developer Tools
 - Proficiency in using profiling tools and understanding data
 	- Understand what every tab inside Chrome Dev Tools does and why
 	
@@ -158,7 +158,7 @@ List out the utilities / frameworks you're going to be using for the project. If
   - Coffeescript
   - Angular JS
 
-### Common Editors / IDEs You'll see 
+### Common Editors / IDE's You'll see 
 - Netbeans
 - Sublime Text
 - Webstorm
