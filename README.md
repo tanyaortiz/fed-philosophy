@@ -158,7 +158,7 @@ List out the utilities / frameworks you're going to be using for the project. If
   - Coffeescript
   - Angular JS
 
-### Common Editors / IDE's You'll see 
+### Common Editors / IDEs You'll see 
 - Netbeans
 - Sublime Text
 - Webstorm
