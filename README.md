@@ -28,7 +28,7 @@
             <a href="#environment-setup">Environment Setup</a>
             <ul>
                 <li><a href="#project-setup--scaffold">Project Setup &amp; Scaffold</a></li>
-                <li><a href="#getting-up-and-running">Getting Up and Running</a></li>
+                <li><a href="#getting-up-and-running">Getting Up & Running</a></li>
             </ul>
         </li>
         <li>
@@ -329,7 +329,7 @@ Learn more about installing and using Yeoman [here](http://yeoman.io/learning/in
 	bower_components
 </pre>
 
-## Getting Up and Running
+## Getting Up & Running
 Any commands that require execution
 
 - ```npm install```
